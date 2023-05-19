@@ -1,0 +1,23 @@
+Se requiere tener base de datos local; 
+la creacion de tablas ya lo realiza solo
+----------------------------------------------------//-----------------------
+tener id spring boot
+
+realizar configuracion en la siguiente ruta C:\GitAlinza\ccolombia\src\main\resources application.properties
+tener postman para tener todos los servicios rest
+get http://localhost:8082/componente
+post http://localhost:8082/componente
+put http://localhost:8082/componente/{valor}
+delete http://localhost:8082/componente/{valor}
+
+-----------------------------------//-------------------------
+ejecutar aparte el proyecto angular que estan en spring-web ruta 
+C:\GitAlinza\ccolombia\src\main\resources\static
+con el comando nmp start ya que se le agrego cros para que las servicios funcionen 
+
+
+gracias :,)
+
+
+
+
