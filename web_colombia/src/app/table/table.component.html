@@ -1,0 +1,47 @@
+
+<div class="mat-elevation-z8">
+  <mat-table  [dataSource]="dataSource" matSort>
+
+
+    <!-- businessID Column -->
+    <ng-container matColumnDef="businessID">
+      <mat-header-cell *matHeaderCellDef> businessID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.businessID}} </mat-cell>
+    </ng-container>
+
+    <!-- email Column -->
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+    </ng-container>
+
+    <!-- phone Column -->
+    <ng-container matColumnDef="phone">
+      <mat-header-cell *matHeaderCellDef> phone </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.phone}} </mat-cell>
+    </ng-container>
+
+    <!--sharedKey-->
+    <ng-container matColumnDef="sharedKey">
+      <mat-header-cell *matHeaderCellDef> sharedKey </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.sharedKey}} </mat-cell>
+    </ng-container>
+    <!--starDate-->
+    <ng-container matColumnDef="starDate">
+      <mat-header-cell *matHeaderCellDef> starDate </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.starDate}} </mat-cell>
+    </ng-container>
+
+    <!-- Edit/Delete Buttons -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <button  class="btn btn-primary" (click)="delete(element)"> edit </button>
+        <button  class="btn btn-primary mx-2" >delete </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

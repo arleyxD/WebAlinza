@@ -1,0 +1,55 @@
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.main {
+    flex-basis: 70%;
+}
+
+li.menu-item  {
+    list-style-type: none;
+    margin: 1.5rem 0;
+}
+
+li.menu-item a {
+    text-decoration: none;
+    color: gray;
+}
+
+.aside {
+    flex-basis: 20%;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+.search {
+    border-radius: 3rem;
+}
+
+
+
+/* button.btn.btn-white {
+    margin-right: 1%;
+    color: white;
+    background-color: blue;
+    padding: 4px 18px 5px 18px;
+    border-radius: 5px;
+} */
+
+mat-button-toggle {
+    background-color: blue;
+    color: white;
+}
+
+.search.advanced {
+    display: flex;
+  }
+  

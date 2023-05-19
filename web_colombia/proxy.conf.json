@@ -1,0 +1,7 @@
+{
+    "/componente": {
+      "target": "http://localhost:8082/componente",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
